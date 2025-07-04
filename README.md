@@ -145,7 +145,7 @@ Expected for synthetic data. Not an error.
 Safe for synthetic data pipelines; see script for details.
 
 - This filename ... does not conform to MNE naming conventions
-Consider renaming outputs to e.g., _raw.fif or _eeg.fif for full BIDS/MNE compatibility.
+Outputs cab be renamed to e.g., _raw.fif or _eeg.fif for full BIDS/MNE compatibility.
 
 - UserWarning: This figure includes Axes that are not compatible with tight_layout
 Figure aesthetics only; no impact on results.
@@ -154,7 +154,7 @@ Figure aesthetics only; no impact on results.
 
 ## Using with Real EEG Data
 
-To apply the artifact pipeline to real EEG, place your .fif data in the appropriate input directory, ensure digitization/headshape points are present, and update default_params.yml for your channel naming and thresholds. See comments in preprocessing/artifact_pipeline.py.
+To apply the artifact pipeline to real EEG, place the .fif data in the appropriate input directory, ensure digitization/headshape points are present, and update default_params.yml for the channel naming and thresholds. See comments in preprocessing/artifact_pipeline.py.
 
 ---
 
@@ -170,7 +170,7 @@ For questions or collaborations, please contact via GitHub Issues.
 
 If you use this code or data, please cite:
 
-> Sopasakis, G. (2025). Conscious Retroactive Intervention: A Reversed-Time Framework for Predictive Cognition.
+> Sopasakis, G. (2025). Conscious Retroactive Intervention: A Reversed-Time Framework for Predictive Cognition. Manuscript in preparation.
 
 ---
 

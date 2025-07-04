@@ -1,0 +1,8 @@
+statistics:
+  # Permutation‐test parameters
+  n_perm: 10000
+
+  # Power‐analysis parameters
+  effect_sizes: [0.2, 0.5, 0.8]
+  alpha: 0.05
+  power: 0.8

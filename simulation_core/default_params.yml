@@ -1,0 +1,9 @@
+master_eq:
+  seed:            52       # your master RNG seed
+  tau_mem:         10.0     # membrane time‐constant (s)
+  lambda_decay:    0.5      # exponential decay rate for weights
+  p0:              0.5      # gating offset parameter
+  alpha:           0.1      # gating slope parameter
+  t_max:           100.0    # total simulation time (s)
+  dt:              0.1      # time‐step size (s)
+  X0:              1.0      # initial state

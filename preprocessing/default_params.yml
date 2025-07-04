@@ -1,0 +1,10 @@
+preprocessing:
+  l_freq: 1.0
+  h_freq: 40.0
+  notch_freq: 50.0
+  ptp_threshold: 1.0    # 1,000,000 µV for your data
+  flat_threshold: 1e-6  # 1 µV
+  bads_threshold: 8
+  ica_n_components: 20
+  eog_ch: 'EOG 061'
+

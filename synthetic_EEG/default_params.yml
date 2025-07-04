@@ -1,0 +1,11 @@
+synthetic_EEG:
+  seed: 52
+  sfreq: 256
+  n_channels: 64
+  record_length_s: 120
+  spindle_amp: 2.0
+  pink_alpha: 1.0
+  spindle_onsets_s: [30, 60, 90]
+  spindle_duration_s: 1.0
+  spindle_freq_hz: 14.0
+  apply_montage: true

@@ -1,0 +1,13 @@
+logistic:
+  seed: 52
+  p_min: 0.0
+  p_max: 1.0
+  n_points: 400
+  p0: 0.5
+  alpha: 0.05
+  noise_std: 0.05
+  seed: 0
+  p0_guess: 0.5
+  alpha_guess: 0.1
+  n_bootstrap: 1000
+  ci_percent: 95

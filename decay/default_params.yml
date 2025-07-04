@@ -1,0 +1,11 @@
+decay:
+  seed: 52
+  A0: 1.0
+  tau_fut: 20.0
+  noise_log: 0.1
+  delta_start: 0
+  delta_end: 30
+  delta_step: 5
+  n_cont: 300
+  n_boot: 1000
+  ci_percent: 95

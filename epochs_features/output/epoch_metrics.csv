@@ -1,0 +1,13 @@
+file,band,epoch,peak_env,dur_above_thr_s
+TierA_sleep_raw_clean_eeg.fif,theta,0,,0.0
+TierA_sleep_raw_clean_eeg.fif,theta,1,,0.0
+TierA_sleep_raw_clean_eeg.fif,theta,2,,0.0
+TierA_sleep_raw_clean_eeg.fif,spindle,0,,0.0
+TierA_sleep_raw_clean_eeg.fif,spindle,1,,0.0
+TierA_sleep_raw_clean_eeg.fif,spindle,2,,0.0
+TierB_wake_raw_clean_eeg.fif,theta,0,,0.0
+TierB_wake_raw_clean_eeg.fif,theta,1,,0.0
+TierB_wake_raw_clean_eeg.fif,theta,2,,0.0
+TierB_wake_raw_clean_eeg.fif,spindle,0,,0.0
+TierB_wake_raw_clean_eeg.fif,spindle,1,,0.0
+TierB_wake_raw_clean_eeg.fif,spindle,2,,0.0

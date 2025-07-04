@@ -1,0 +1,16 @@
+qpt:
+  seed:        52
+  # Simulation parameters
+  gamma_f:      1.0
+  gamma_b_vals: [0.2, 0.8]
+  t_max:        10.0
+  n_t:          200
+  lambda_env_min: 0.0      # was kappa_min
+  lambda_env_max: 1.0      # was kappa_max
+  n_lambda_env:   11       # was n_kappa
+  noise_R:      0.05
+  seed:         0
+
+  # Fitting parameters
+  ci_percent:   95
+  n_bootstrap:  1000

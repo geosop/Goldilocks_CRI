@@ -59,7 +59,7 @@ Goldilocks_CRI/
 - See `environment.yml` or `requirements.txt` (if provided)
 
 #### **Quick Environment Setup (Conda recommended):**
-```bash
+bash
 conda create -n goldilocks_cri python=3.9 mne numpy scipy pandas matplotlib pyyaml
 conda activate goldilocks_cri
 pip install picard

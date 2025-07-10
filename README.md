@@ -8,7 +8,7 @@ Code, data, and figures for the Conscious Retroactive Intervention (CRI) Perspec
 
 This repository supports the Perspective submission:
 
-> **"Conscious Retroactive Intervention: A Reversed-Time Framework for Predictive Cognition"**
+> **"Conscious Retroactive Intervention: A Reversed-Time Quantum Framework for Predictive Cognition"**
 
 It provides all code, synthetic data, simulations, figures, and numerical pipelines to transparently reproduce and audit the CRI framework and its supplementary analyses.
 

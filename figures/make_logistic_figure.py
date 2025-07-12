@@ -92,9 +92,9 @@ def main():
 
     # Inset: derivative
     ax_ins = inset_axes(
-        ax, width="40%", height="40%",
+        ax, width="75%", height="75%",
         loc='lower left',
-        bbox_to_anchor=(0.55, 0.2, 0.4, 0.4),
+        bbox_to_anchor=(0.65, 0.3, 0.4, 0.4),
         bbox_transform=ax.transAxes
     )
     ax_ins.plot(p_cont, derivative(p_cont, p0_hat, alpha_hat), linewidth=0.75)

@@ -83,9 +83,9 @@ def main():
 
     # Inset: raw A_pre vs Δ
     ax_ins = inset_axes(
-        ax, width="40%", height="40%",
+        ax, width="70%", height="70%",
         loc='lower left',
-        bbox_to_anchor=(0.15, 0.20, 0.4, 0.4),
+        bbox_to_anchor=(0.15, 0.17, 0.4, 0.4),
         bbox_transform=ax.transAxes
     )
     A_pre_cont = params['A0'] * np.exp(-df_curve['delta_cont'] / params['tau_fut'])

@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: 3.9
+          environment-file: utilities/env.yml
+          activate-environment: goldilocks_cri
+          auto-update-conda: true
+
+      - name: Install extra packages
+        run: |
+          pip install picard psychopy
+
+      - name: Run full pipeline
+        run: |
+          chmod +x run_all.sh
+          ./run_all.sh

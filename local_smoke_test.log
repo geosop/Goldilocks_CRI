@@ -1,0 +1,57 @@
+
+⏱ 1) Schedule Psychopy cues
+Saved cue schedule to C:\Users\geosg\projects\Goldilocks_CRI\stimulus_presentation\output\cue_schedule.csv
+
+🔬 2) Decay simulation & fitting
+Saved discrete & continuous decay data in C:\Users\geosg\projects\Goldilocks_CRI\decay\output/
+τ_fut = 20.00 ± 1.51 s
+95% CI: [17.37, 23.68] s
+Saved fit results in C:\Users\geosg\projects\Goldilocks_CRI\decay\output/
+
+🔬 3) Logistic‐gating simulation & fitting
+Saved simulated logistic data to C:\Users\geosg\projects\Goldilocks_CRI\logistic_gate\output\logistic_data.csv
+Fitted p0 = 0.501 ± 0.001
+Fitted alpha = 0.0518 ± 0.0010
+95% CI p0:    [0.498, 0.504]
+95% CI alpha: [0.0491, 0.0544]
+Saved fit results to C:\Users\geosg\projects\Goldilocks_CRI\logistic_gate\output/fit_logistic_results.csv
+
+🔬 4) Quantum Process Tomography simulation & fitting
+Saved synthetic QPT data (populations + R_obs) to C:\Users\geosg\projects\Goldilocks_CRI\qpt\output\qpt_sim_data.npz
+Population fits saved to C:\Users\geosg\projects\Goldilocks_CRI\qpt\output/qpt_pop_fit.csv
+Ratio fits saved to      C:\Users\geosg\projects\Goldilocks_CRI\qpt\output/qpt_R_fit.csv
+Slope = 0.960 ± 0.036 (CI 95%: [0.905, 1.058])
+
+🎛 5) Synthetic EEG generation
+DEBUG: EEG ptp min=-249.9µV, max=661.7µV
+DEBUG: EEG ptp min=-249.9µV, max=661.7µV
+DEBUG: EEG ptp min=-259.6µV, max=621.7µV
+TierA EEG ptp per channel: min=0.0µV, max=3941800.7µV
+Synthetic EEG saved to C:\Users\geosg\projects\Goldilocks_CRI\synthetic_EEG\output
+
+🧹 6) EEG preprocessing & artifact removal
+EEG channel peak-to-peak range (min, max): 0.00µV, 3936094.75µV
+Bad PTP channels: 1, Bad flat: 1, Bad var: 0
+Marking bad channels (PTP > 1000000.0µV, < 1.0µV, or high var): ['EEG 000', 'EEG 006']
+Interpolation failed: No digitization points found for dig_kinds=[4 (FIFFV_POINT_EXTRA), 3 (FIFFV_POINT_EEG)]. Bad channels set to NaN.
+Saved cleaned data to C:\Users\geosg\projects\Goldilocks_CRI\preprocessing\output/TierA_sleep_raw_clean_eeg.fif
+EEG channel peak-to-peak range (min, max): 0.00µV, 562.27µV
+Bad PTP channels: 0, Bad flat: 1, Bad var: 0
+Marking bad channels (PTP > 1000000.0µV, < 1.0µV, or high var): ['EEG 006']
+Interpolation failed: No digitization points found for dig_kinds=[4 (FIFFV_POINT_EXTRA), 3 (FIFFV_POINT_EEG)]. Bad channels set to NaN.
+Saved cleaned data to C:\Users\geosg\projects\Goldilocks_CRI\preprocessing\output/TierB_wake_raw_clean_eeg.fif
+
+📦 7) Epoch extraction & feature computation
+Epoch extraction complete. Outputs in C:\Users\geosg\projects\Goldilocks_CRI\epochs_features\output
+Saved x(t) to C:\Users\geosg\projects\Goldilocks_CRI\epochs_features\output/x_t.csv
+
+📊 8) Statistical tests & power analysis
+Saved permutation test results to C:\Users\geosg\projects\Goldilocks_CRI\statistics\output
+Saved power analysis results to C:\Users\geosg\projects\Goldilocks_CRI\statistics\output
+
+🖼 9) Figure generation
+Saved decay figure to C:\Users\geosg\projects\Goldilocks_CRI\figures\output\decay_refined_figure.pdf
+Saved logistic figure to C:\Users\geosg\projects\Goldilocks_CRI\figures\output\logistic_refined_figure.pdf
+Saved tomography figure to C:\Users\geosg\projects\Goldilocks_CRI\figures\output\tomography_refined_figure.pdf
+
+✅ All pipelines complete!

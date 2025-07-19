@@ -1,1 +1,20 @@
 # Ignore temporary files
+
+# Byte‑compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Conda environment files
+*.yaml
+*.yml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE‑specific files
+.vscode/
+.idea/
+
+# Data outputs (keep the repo clean)
+*/output/

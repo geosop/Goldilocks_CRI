@@ -4,13 +4,33 @@ Created on Thu Jul  3 17:10:18 2025
 
 @author: ADMIN
 """
+import picard
+# Monkey-patch a _version_ so MNE's version check passes:
+picard.__version__ = "0.8.0"
+
 import os
+import sys
 import yaml
 import mne
 import numpy as np
 
-# Suppress MNE warnings about file naming
+# ─── suppress MNE “stupid warnings” about file naming ──────────────────────────
 mne.utils.set_config('MNE_IGNORE_STUPID_WARNINGS', 'true')
+
+
+# ─── 'utilities' is on the import path ───────────────────────────────
+here = os.path.dirname(__file__)
+root = os.path.abspath(os.path.join(here, '..'))
+if root not in sys.path:
+    sys.path.insert(0, root)
+# ──────────────────────────────────────────────────────────────────────────────
+
+from utilities.seed_manager import load_state, save_state
+
+# ─── here we add these third-party imports ───────────────────────────────────────────────
+from scipy.signal import hilbert
+import pandas as pd
+# ──────────────────────────────────────────────────────────────────────────────
 
 def load_params():
     here = os.path.dirname(__file__)
